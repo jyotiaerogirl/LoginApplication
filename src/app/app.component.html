@@ -1,0 +1,18 @@
+<form #signupForm="ngForm" (ngSubmit)="registerUser(signupForm)">
+<header>Welocme to {{title}} Login Form</header>
+
+
+  <div class="container">
+    <label for="uname"><b>Username </b></label>
+    <input type="email" placeholder="Enter Username" name="uname" required ngModel>
+<br>
+    <label for="psw"><b>Password </b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required ngModel>    
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="submit">Login</button> &nbsp;&nbsp;
+    <button type="reset" class="resetbtn">Reset</button>
+    </div>
+</form>
+
